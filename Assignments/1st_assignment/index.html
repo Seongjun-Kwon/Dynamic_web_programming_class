@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>16100060 권성준</title>
+  <style>
+    #addList
+    {
+      padding: 5px 10px; border: 0; border-radius: 5px;
+      background: green; color: white;
+    }
+    ul{padding: 0; list-style-position: inside;}
+    li{border-bottom: 1px solid black; padding: 5px 0;}
+    .active{background: gray;}
+  </style>
+</head>
+<body>
+  <div>
+    <h2>1. 나의 소개</h2>
+    <span>학과: 기계시스템디자인공학과<br></span>
+    <span>학번: 16100060<br></span>
+    <span>학년: 4학년<br></span>
+    <span>이름: 권성준<br></span>
+    <span>이메일: tjdwns1865@naver.com<br></span>
+  </div>
+  <div>
+    <h2>2. 수강한 과목</h2>
+    <table border="1">
+      <tr>
+        <th></th>
+        <th>1학기</th>
+        <th>2학기</th>
+      </tr>
+      <tr>
+        <td>1학년</td>
+        <td>진로설계<br>일반화학및 실험<br>미분적분학(1)<br>논리와사고<br>한국사의재조명<br>실용영어읽기와 쓰기<br>물리학 및 실험(1)<br>창의입문설계</td>
+        <td>미분적분학(2)<br>글쓰기와의사소통</td>
+      </tr>
+      <tr>
+        <td>2학년</td>
+        <td>정치의 이해</td>
+        <td>정역학<br>공학수학(2)<br>프로그래밍입문<br>물리학및실험(2)<br>케이묵</td>
+      </tr>
+      <tr>
+        <td>3학년</td>
+        <td>재료역학<br>공학수학(1)<br>기계제도<br>재료과학<br>인간과공동체<br>과학기술과사회<br>확률과통계</td>
+        <td>유체역학<br>동역학<br>기계공작법<br>CAD<br>공학프로그래밍<br>창의적 사고<br>케이묵</td>
+      </tr>
+      <tr>
+        <td>4학년</td>
+        <td>프레스금형설계<br>사출금형설계<br>기계요소설계<br>열역학<br>금속재료및열처리<br>PC기반제어프로그래밍<br>혜윰<br>케이묵<br>동적웹프로그래밍</td>
+        <td>미수강</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2 id="pageList">3. 만들고 싶은 웹페이지</h2>
+    <button id="addList">목록 추가</button>
+    <ul id="List">
+      <li>음악 관련 웹페이지</li>
+      <li>여행지 추천 웹페이지</li>
+      <li>영화 소개 웹페이지</li>
+      <li>게임 관련 웹페이지</li>
+      <li>내가 좋아하는 스포츠 관련 웹페이지</li>
+    </ul>
+  </div>
+  <div>
+    <h2>4. 프로젝트 관련 내용</h2>
+    <span>인원: 1명(혼자)<br></span>
+    <span>주제: nba 관련 커뮤니티<br></span>
+  </div>
+  <script>
+    var page=document.getElementById('pageList');
+    var list=document.getElementById('List');
+    var li=document.getElementsByTagName('li');
+    var btn=document.getElementById('addList');
+    btn.addEventListener('click', function()
+    {
+      var txt=prompt('목록 입력');
+      list.innerHTML+='<li>'+txt+'</li>';
+    });
+    list.addEventListener('click', activeItem);
+    function activeItem(e)
+    {
+      if(e.target.nodeName=='LI')
+      {
+          pageList.innerHTML=e.target.innerText;
+          for(var i=0; i<e.target.parentNode.children.length; i++) {e.target.parentNode.children[i].removeAttribute('class')};
+          e.target.setAttribute('class', 'active');
+      }
+    }
+  </script>
+</body>
+</html>
