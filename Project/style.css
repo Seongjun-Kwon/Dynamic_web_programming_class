@@ -17,6 +17,7 @@ html, body {
 body {
   color: var(--color-secondary);
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -36,25 +37,12 @@ body {
   position: relative;
   color: var(--color-secondary);
   top: -15px;
-  left: 30%;
+  left: 85%;
   text-decoration: none;
 }
 
-#imgfile1 {
-  width:25%;
-  float:left;
-  height:100vh;
-}
-
-#imgfile2{
-  width:50%;
-  float:left;
-  height:100vh;
-}
-
-#imgfile3{
-  width:25%;
-  float:left;
+.pic-container > img {
+  width: 100%;
   height:100vh;
 }
 
