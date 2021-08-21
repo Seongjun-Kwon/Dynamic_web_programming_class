@@ -19,8 +19,15 @@ body {
 	height: 100vh;
 	background-image: url("images/home.png");
 	background-repeat: no-repeat;
-	background-color: silver;
+	background-color: black;
 	overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+canvas
+{
+    pointer-events: none;
+    position: absolute;
 }
 
 .header {
