@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
   </head>
-<body>
+<body onload="myInit()">
   <input type="checkbox" id="menu-toggle"/>
-  
   <label for="menu-toggle">
     <span></span>
   </label>
-  
+
   <div class="header">
     <h2><a href="../Project/index.html">MENU</a></h2>
   </div>
@@ -39,7 +38,7 @@
           <li class="menu-item"><a class="menu-link" href="#">LA LAKERS</a></li>
         </ul>
       </li>
-      <li class="menu-item"><a class="menu-link" href="#">CHAMPIONSHIPS</a>
+      <li class="menu-item"><a class="menu-link" href="#">HIGHLIGHTS</a>
         <ul class="submenu">
           <li class="menu-item"><a class="menu-link" href="#">2012</a></li>
           <li class="menu-item"><a class="menu-link" href="#">2013</a></li>
@@ -49,19 +48,16 @@
       </li>
     </ul>
   </nav>
-  
-  <div class="pic-container">
-    <img id="home" src="../Project/images/home.png" usemap="#homeMap">
-  </div>
-  
-  <map name="homeMap">
-    <area href="#" style="cursor:pointer" coords="148,68,133,129,148,277,170,284,198,286,234,281,256,268,262,123,247,68,217,57,176,58" shape="poly">
-    <area href="#" style="cursor:pointer" coords="284,81,289,136,301,276,332,285,355,286,382,285,410,278,417,141,422,81,371,58,340,58" shape="poly">
-    <area href="#" style="cursor:pointer" coords="445,86,444,137,450,274,470,280,505,282,536,282,566,276,572,137,568,84,529,61,505,55,481,68" shape="poly">
-    <area href="#" style="cursor:pointer" coords="160,354,556,547" shape="rect">
-    <area href="../Project/Profile/profile.html" style="cursor:pointer" coords="594,442,579,567,669,577,685,446" shape="poly">
-    <area href="#" style="cursor:pointer" coords="858,158,1361,543" shape="rect">
-  </map>
 
+  <canvas id="Canvas"></canvas>
+    <img src="images/home.png" usemap="#homeMap" id="home" />
+    <map id="homeMap" name="homeMap">
+      <area id="miami" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" style="cursor:pointer" coords="148,68,133,129,148,277,170,284,198,286,234,281,256,268,262,123,247,68,217,57,176,58" shape="poly">
+      <area id="cleveland" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" style="cursor:pointer" coords="284,81,289,136,301,276,332,285,355,286,382,285,410,278,417,141,422,81,371,58,340,58" shape="poly">
+      <area id="la" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" style="cursor:pointer" coords="445,86,444,137,450,274,470,280,505,282,536,282,566,276,572,137,568,84,529,61,505,55,481,68" shape="poly">
+      <area id="highlight" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" style="cursor:pointer" coords="160,354,556,547" shape="rect">
+      <area id="profile" onmouseover="myHover(this);" onmouseout="myLeave();" href="../Project/Profile/profile.html" style="cursor:pointer" coords="594,442,579,567,669,577,685,446" shape="poly">
+      <area id="awards" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" style="cursor:pointer" coords="858,158,1361,543" shape="rect">
+    </map>
 </body>
 </html>
