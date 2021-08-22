@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="arthor" content="KWON">
+    <title>Lebron James</title>
+    <link rel="stylesheet" href="historyStyle.css">
+  </head>
+<body onload="myInit()">
+  <input type="checkbox" id="menu-toggle"/>
+  <label for="menu-toggle">
+    <span></span>
+  </label>
+
+  <div class="header">
+    <h2><a href="../index.html">MENU</a></h2>
+  </div>
+
+  <nav id="main" class="menu-main">
+    <ul class="menu">
+      <li class="menu-item"><a class="menu-link" href="../index.html">HOME</a></li>
+      <li class="menu-item"><a class="menu-link" href="../Profile/profile.html">PROFILE</a></li>
+      <li class="menu-item"><a class="menu-link" href="history.html">HISTORY</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link" href="#">1984-2003</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2003-2010</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2010-2014</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2014-2018</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2018-</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a class="menu-link" href="#">AWARDS</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link" href="#">CLEVELAND CAVALIERS</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">MIAMI HEATS</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">LA LAKERS</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a class="menu-link" href="#">HIGHLIGHTS</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link" href="#">2012</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2013</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2016</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2020</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <canvas id="Canvas"></canvas>
+  <img src="../images/history.png" usemap="#historyMap" id="home" />
+  <map id="historyMap" name="historyMap">
+    <area class="highschool" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" onclick="modal_open()" style="cursor:pointer" coords="191,161,154,283,145,591,210,584,256,594,308,596,372,594,418,602,422,297,391,161,329,129,256,125" shape="poly">
+    <area class="miami" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" onclick="modal_open()" style="cursor:pointer" coords="497,149,464,268,493,579,529,599,576,612,637,613,687,599,723,567,732,264,701,147,641,125,555,125" shape="poly">
+    <area class="cleveland" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" onclick="modal_open()" style="cursor:pointer" coords="774,174,785,296,806,589,841,605,892,617,943,617,993,610,1030,589,1046,295,1059,171,950,128,889,127" shape="poly">
+    <area class="la" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" onclick="modal_open()" style="cursor:pointer" coords="1097,184,1097,297,1112,591,1153,603,1208,609,1261,610,1310,605,1347,589,1362,293,1357,175,1277,135,1229,125,1179,137" shape="poly">
+  </map>
+
+  <div id="block"></div>
+
+  <div id="modal">
+  	<h1></h1>
+  	<p></p>
+  	<div class="btn-close" onclick="modal_close()">X</div>
+  </div>
+  <script src="historyApp.js"></script>
+</body>
+</html>
