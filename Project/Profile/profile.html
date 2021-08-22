@@ -7,9 +7,8 @@
     <title>Lebron James</title>
     <link rel="stylesheet" href="profileStyle.css">
   </head>
-<body>
+<body onload="myInit()">
   <input type="checkbox" id="menu-toggle"/>
-  
   <label for="menu-toggle">
     <span></span>
   </label>
@@ -22,7 +21,7 @@
     <ul class="menu">
       <li class="menu-item"><a class="menu-link" href="../index.html">HOME</a></li>
       <li class="menu-item"><a class="menu-link" href="profile.html">PROFILE</a></li>
-      <li class="menu-item"><a class="menu-link" href="#">HISTORY</a>
+      <li class="menu-item"><a class="menu-link" href="../History/history.html">HISTORY</a>
         <ul class="submenu">
           <li class="menu-item"><a class="menu-link" href="#">1984-2003</a></li>
           <li class="menu-item"><a class="menu-link" href="#">2003-2010</a></li>
@@ -38,7 +37,7 @@
           <li class="menu-item"><a class="menu-link" href="#">LA LAKERS</a></li>
         </ul>
       </li>
-      <li class="menu-item"><a class="menu-link" href="#">CHAMPIONSHIPS</a>
+      <li class="menu-item"><a class="menu-link" href="#">HIGHLIGHTS</a>
         <ul class="submenu">
           <li class="menu-item"><a class="menu-link" href="#">2012</a></li>
           <li class="menu-item"><a class="menu-link" href="#">2013</a></li>
@@ -49,9 +48,24 @@
     </ul>
   </nav>
 
-  <div class="pic-container">
-    <img id="profile" src="../images/profile.png" alt="Lebron profile">
+  <canvas id="Canvas"></canvas>
+  <img src="../images/profile.png" usemap="#profileMap" id="home" />
+  <map name="profileMap" id="profileMap">
+    <area shape="rect" href="#" onmouseover="myHover(this);" onmouseout="myLeave();" coords="900,237,1050,290" style="cursor:pointer">
+    <area shape="rect" onmouseover="myHover(this);" onmouseout="myLeave();" coords="1518,718,1520,720" style="cursor:pointer">
+    <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" coords="523,315,524,371,553,371,679,355,678,315" style="cursor:pointer">
+    <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" coords="538,376,554,427,700,405,685,355" style="cursor:pointer">
+    <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" coords="496,416,546,420,552,429,592,423,646,426,641,480,492,470" style="cursor:pointer">
+    <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" coords="981,416,997,466,1141,446,1128,395" style="cursor:pointer">
+    <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" coords="986,445,995,468,1071,458,1135,469,1118,518,975,496" style="cursor:pointer">
+    <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" onclick="modal_open()" coords="832,220,812,228,810,253,800,259,799,275,802,293,787,305,770,308,752,323,749,341,739,350,733,370,722,384,715,432,701,460,704,488,721,494,733,504,757,504,773,500,780,490,780,507,770,528,770,572,764,581,772,611,763,619,762,639,770,646,805,646,814,638,813,619,808,611,813,582,810,580,814,557,824,541,814,511,822,494,830,494,832,490,840,496,845,496,852,507,845,534,850,555,858,576,852,582,860,608,856,620,858,643,878,648,896,646,908,643,904,622,896,612,903,582,894,576,898,536,891,515,887,508,887,492,896,486,884,431,872,398,885,368,898,386,903,405,925,431,911,448,910,458,922,462,930,456,933,469,931,482,938,491,944,489,950,493,965,487,966,463,961,449,954,434,943,384,929,368,928,353,917,341,915,323,901,310,878,304,864,292,864,279,870,264,864,255,855,252,854,232,849,224" style="cursor:pointer">
+  </map>
+
+  <div id="modal">
+  	<h1></h1>
+  	<p></p>
+  	<div class="btn-close" onclick="modal_close()">X</div>
   </div>
-  
+  <script src="profileApp.js"></script>
 </body>
 </html>
