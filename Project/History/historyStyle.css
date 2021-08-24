@@ -272,13 +272,44 @@ canvas
   }
 }
 
-/* 라이트박스 컨테이너 */
+#highschool {
+  width: 100%;
+}
+
+#modal #history1 {
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: large;
+  font-weight: bolder;
+  line-height: 200%;
+  color: #009900;
+}
+
+#modal #history2 {
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: large;
+  font-weight: bolder;
+  line-height: 200%;
+  color: #e61919;
+}
+
+#modal .historyhead1 {
+  text-align: center;
+  color: black;
+}
+
+#modal .historyhead2 {
+  color: black;
+}
+
 #modal.active{
   margin: 0;
   padding: 0;
   position: fixed;
   overflow-x: hidden;
-	background: white;
 	width: 760px;
   height: 720px;
 	left: 380px;
@@ -286,6 +317,14 @@ canvas
 	box-sizing: border-box;
 	z-index: 99;
   display: block;
+}
+
+#modal.active #history1 {
+  background-color: #e9ef79;
+}
+
+#modal.active #history2 {
+  background-color: white;
 }
 
 #modal{
@@ -308,7 +347,6 @@ canvas
 
 /* ******************************* */
 
-/* 라이트 박스 배경 처리 */
 #block{
 	position: fixed;
 	width: 100%;
@@ -326,3 +364,18 @@ canvas
 #block.active{
   display: block;
 }
+
+/* 인디케이터 네비게이션 */
+.indicator{ text-align: center; }
+.indicator button{
+	background: #666; color: white;
+	font-size: 12px;
+	border: none; padding: 15px 15px;
+}
+.indicator button:focus{ background: #38f; }
+
+figure div{
+	display: none;
+}
+
+figure div.active{ display: block; }
