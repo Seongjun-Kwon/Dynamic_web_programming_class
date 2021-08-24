@@ -55,7 +55,7 @@ function myLeave()
 
 function myInit()
 {
-    var img = byId('home');
+    var img = byId('history');
 
     var x,y, w,h;
 
@@ -84,17 +84,28 @@ function myInit()
 }
 
 // 초기화
+	var indicator = document.querySelectorAll('.indicator button');
 	var modal = document.querySelector('#modal');
-	var block = document.querySelector('#block'); // 라이트박스 배경
+	var block = document.querySelector('#block');
 
-// 라이트 박스 표시
-function modal_open(){
+function modal_open(num){
 	modal.setAttribute('class', 'active');
 	block.setAttribute('class', 'active');
+
+	change_div(num);
+	indicator[num-1].focus();
 }
 
-// 라이트 박스 닫기
 function modal_close(){
 	modal.removeAttribute('class');
 	block.removeAttribute('class');
+}
+
+function change_div(val){
+  var divs = document.querySelectorAll('figure > div');
+
+  for( var i=0; i< divs.length; i++){
+    divs[i].removeAttribute('class');
+  }
+  divs[val-1].setAttribute('class', 'active');
 }
