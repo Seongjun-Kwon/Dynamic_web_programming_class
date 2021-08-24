@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="arthor" content="KWON">
+    <title>Lebron James</title>
+    <link rel="stylesheet" href="highlightsStyle.css">
+  </head>
+<body onload="myInit()">
+  <input type="checkbox" id="menu-toggle"/>
+  <label for="menu-toggle">
+    <span></span>
+  </label>
+
+  <div class="header">
+    <h2><a href="../index.html">MENU</a></h2>
+  </div>
+
+  <nav id="main" class="menu-main">
+    <ul class="menu">
+      <li class="menu-item"><a class="menu-link" href="../index.html">HOME</a></li>
+      <li class="menu-item"><a class="menu-link" href="../Profile/profile.html">PROFILE</a></li>
+      <li class="menu-item"><a class="menu-link" href="../History/history.html">HISTORY</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link" href="#">1984-2003</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2003-2010</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2010-2014</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2014-2018</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2018-</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a class="menu-link" href="../Awards/awards.html">AWARDS</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link" href="#">CLEVELAND CAVALIERS</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">MIAMI HEATS</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">LA LAKERS</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a class="menu-link" href="highlights.html">HIGHLIGHTS</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link" href="#">2012</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2013</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2016</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">2020</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <canvas id="Canvas"></canvas>
+  <img src="../images/highlights.png" usemap="#highlightsMap" id="highlights" />
+  <map id="highlightsMap" name="highlightsMap">
+    <area class="highlights" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" onclick="modal_open(1)" style="cursor:pointer" coords="269,86,1095,440" shape="rect">
+  </map>
+
+  <div id="block"></div>
+
+  <div id="modal">
+    <figure>
+      <div class="active">
+        <iframe src="https://www.youtube.com/embed/Hh7llhlYZIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+        <iframe src="https://www.youtube.com/embed/vZldJ5ocm5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+      </div>
+      <div>
+        <iframe class="video2016" src="https://www.youtube.com/embed/8iw-qkYDp4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video2016" src="https://www.youtube.com/embed/ko2J45CEub8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+        <iframe src="https://www.youtube.com/embed/FASrK4wAXZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </figure>
+    <div class="indicator">
+      <button onclick="change_div(this.innerHTML)">1</button>
+    	<button onclick="change_div(this.innerHTML)">2</button>
+    	<button onclick="change_div(this.innerHTML)">3</button>
+      <button onclick="change_div(this.innerHTML)">4</button>
+    </div>
+  	<div class="btn-close" onclick="modal_close()">X</div>
+  </div>
+  <script src="highlightsApp.js"></script>
+</body>
+</html>
