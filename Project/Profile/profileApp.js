@@ -55,7 +55,7 @@ function myLeave()
 
 function myInit()
 {
-    var img = byId('home');
+    var img = byId('profile');
 
     var x,y, w,h;
 
