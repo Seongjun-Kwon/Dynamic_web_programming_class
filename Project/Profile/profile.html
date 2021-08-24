@@ -23,26 +23,19 @@
       <li class="menu-item"><a class="menu-link" href="profile.html">PROFILE</a></li>
       <li class="menu-item"><a class="menu-link" href="../History/history.html">HISTORY</a>
         <ul class="submenu">
-          <li class="menu-item"><a class="menu-link" href="#">1984-2003</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2003-2010</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2010-2014</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2014-2018</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2018-</a></li>
+          <li class="menu-item"><a class="menu-link">YOUTH</a></li>
+          <li class="menu-item"><a class="menu-link">CLEVELAND CAVALIERS</a></li>
+          <li class="menu-item"><a class="menu-link">MIAMI HEATS</a></li>
+          <li class="menu-item"><a class="menu-link">LA LAKERS</a></li>
         </ul>
       </li>
-      <li class="menu-item"><a class="menu-link" href="#">AWARDS</a>
-        <ul class="submenu">
-          <li class="menu-item"><a class="menu-link" href="#">CLEVELAND CAVALIERS</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">MIAMI HEATS</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">LA LAKERS</a></li>
-        </ul>
-      </li>
+      <li class="menu-item"><a class="menu-link">AWARDS</a></li>
       <li class="menu-item"><a class="menu-link" href="../Highlights/highlights.html">HIGHLIGHTS</a>
         <ul class="submenu">
-          <li class="menu-item"><a class="menu-link" href="#">2012</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2013</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2016</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2020</a></li>
+          <li class="menu-item"><a class="menu-link">2012</a></li>
+          <li class="menu-item"><a class="menu-link">2013</a></li>
+          <li class="menu-item"><a class="menu-link">2016</a></li>
+          <li class="menu-item"><a class="menu-link">2020</a></li>
         </ul>
       </li>
     </ul>
@@ -51,7 +44,7 @@
   <canvas id="Canvas"></canvas>
   <img src="../images/profile.png" usemap="#profileMap" id="profile" />
   <map name="profileMap" id="profileMap">
-    <area shape="rect" href="#" onmouseover="myHover(this);" onmouseout="myLeave();" coords="900,237,1050,290" style="cursor:pointer">
+    <area shape="rect" onmouseover="myHover(this);" onmouseout="myLeave();" coords="900,237,1050,290" style="cursor:pointer">
     <area shape="rect" onmouseover="myHover(this);" onmouseout="myLeave();" coords="1518,718,1520,720" style="cursor:pointer">
     <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" coords="523,315,524,371,553,371,679,355,678,315" style="cursor:pointer">
     <area shape="poly" onmouseover="myHover(this);" onmouseout="myLeave();" coords="538,376,554,427,700,405,685,355" style="cursor:pointer">
@@ -62,9 +55,64 @@
   </map>
 
   <div id="modal">
-  	<h1></h1>
-  	<p></p>
-  	<div class="btn-close" onclick="modal_close()">X</div>
+    <div id="modalProfile">
+  	<h1>Profile</h1>
+    <table class="tb">
+    <thead>
+      <tr>
+        <td class="tb-1">생년월일</th>
+        <td class="tb-2">1984년 12월 30일</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tb-1">국적</td>
+        <td class="tb-2">미국</td>
+      </tr>
+      <tr>
+        <td class="tb-1">출신지</td>
+        <td class="tb-2">오하이오 애크런</td>
+      </tr>
+      <tr>
+        <td class="tb-1">가족</td>
+        <td class="tb-2">배우자 사반나 제임스<br>슬하 2남 1녀</td>
+      </tr>
+      <tr>
+        <td class="tb-1">신장</td>
+        <td class="tb-2">206cm (6' 9'')</td>
+      </tr>
+      <tr>
+        <td class="tb-1">체중</td>
+        <td class="tb-2">113kg (250lbs)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">윙스팬</td>
+        <td class="tb-2">214cm (7' 0.25'')</td>
+      </tr>
+      <tr>
+        <td class="tb-1">후원사</td>
+        <td class="tb-2">나이키</td>
+      </tr>
+      <tr>
+        <td class="tb-1">포지션</td>
+        <td class="tb-2">스몰포워드 / 포인트가드</td>
+      </tr>
+      <tr>
+        <td class="tb-1">드래프트</td>
+        <td class="tb-2">2003년 1라운드 1순위<br>클리블랜드 캐벌리어스 지명</td>
+      </tr>
+      <tr>
+        <td class="tb-1">소속팀<br></td>
+        <td class="tb-2">클리블랜드 캐벌리어스&nbsp;&nbsp;(2003-2010)<br>마이애미 히트 (2010-2014)<br>클리블랜드 캐벌리어스 (2014-2018)<br>LA 레이커스 (2018~)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">연봉</td>
+        <td class="tb-2">$39,219,565</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+  <div class="btn-close" onclick="modal_close()">X</div>
   </div>
   <script src="profileApp.js"></script>
 </body>
