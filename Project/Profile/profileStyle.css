@@ -272,7 +272,54 @@ canvas
   }
 }
 
-/* 라이트박스 컨테이너 */
+#modal #modalProfile {
+  padding-top: 10px;
+  padding-left: 150px;
+  background-color: white;
+}
+
+#modalProfile h1 {
+  padding-left: 200px;
+}
+
+.tb {
+  border-collapse:collapse;
+  border-spacing:0;
+  width: 460px;
+  height: 560px;
+  padding-top: 50px;
+}
+
+.tb td {
+  border-color:black;
+  border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  overflow:hidden;
+  padding:9px 20px;
+  word-break:normal;
+}
+
+.tb .tb-1 {
+  background-color:#6f00cc;
+  border-color:#000000;
+  color:#ffc702;
+  font-weight:bold;
+  text-align:center;
+  font-size: large;
+  vertical-align:middle;
+}
+
+.tb .tb-2 {
+  border-color:#000000;
+  color:#333333;
+  font-weight:bold;
+  text-align:center;
+  font-size: large;
+  vertical-align:middle;
+}
+
 #modal.active{
   margin: 0;
   padding: 0;
@@ -308,7 +355,6 @@ canvas
 
 /* ******************************* */
 
-/* 라이트 박스 배경 처리 */
 #block{
 	position: fixed;
 	width: 100%;
