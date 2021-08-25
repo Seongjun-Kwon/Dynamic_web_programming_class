@@ -86,9 +86,8 @@ function myInit()
 // 초기화
 	var indicator = document.querySelectorAll('.indicator button');
 	var modal = document.querySelector('#modal');
-	var block = document.querySelector('#block'); // 라이트박스 배경
+	var block = document.querySelector('#block');
 
-// 라이트 박스 표시
 function modal_open(num){
 	modal.setAttribute('class', 'active');
 	block.setAttribute('class', 'active');
@@ -97,13 +96,11 @@ function modal_open(num){
 	indicator[num-1].focus();
 }
 
-// 라이트 박스 닫기
 function modal_close(){
 	modal.removeAttribute('class');
 	block.removeAttribute('class');
 }
 
-// 이미지 전환 표시 함수
 function change_div(val){
   var divs = document.querySelectorAll('figure > div');
 
