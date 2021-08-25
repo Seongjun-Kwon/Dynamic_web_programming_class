@@ -14,7 +14,7 @@
   </label>
 
   <div class="header">
-    <h2><a href="../index.html">MENU</a></h2>
+    <h2><a href="highlights.html">HIGHLIGHTS</a></h2>
   </div>
 
   <nav id="main" class="menu-main">
@@ -23,26 +23,20 @@
       <li class="menu-item"><a class="menu-link" href="../Profile/profile.html">PROFILE</a></li>
       <li class="menu-item"><a class="menu-link" href="../History/history.html">HISTORY</a>
         <ul class="submenu">
-          <li class="menu-item"><a class="menu-link" href="#">1984-2003</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2003-2010</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2010-2014</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2014-2018</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2018-</a></li>
+          <li class="menu-item"><a class="menu-link">YOUTH</a></li>
+          <li class="menu-item"><a class="menu-link">CLEVELAND #1</a></li>
+          <li class="menu-item"><a class="menu-link">MIAMI HEAT</a></li>
+          <li class="menu-item"><a class="menu-link">CLEVELAND #2</a></li>
+          <li class="menu-item"><a class="menu-link">LA LAKERS</a></li>
         </ul>
       </li>
-      <li class="menu-item"><a class="menu-link" href="../Awards/awards.html">AWARDS</a>
-        <ul class="submenu">
-          <li class="menu-item"><a class="menu-link" href="#">CLEVELAND CAVALIERS</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">MIAMI HEATS</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">LA LAKERS</a></li>
-        </ul>
-      </li>
+      <li class="menu-item"><a class="menu-link" href="../Awards/awards.html">AWARDS</a></li>
       <li class="menu-item"><a class="menu-link" href="highlights.html">HIGHLIGHTS</a>
         <ul class="submenu">
-          <li class="menu-item"><a class="menu-link" href="#">2012</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2013</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2016</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">2020</a></li>
+          <li class="menu-item"><a class="menu-link">2012</a></li>
+          <li class="menu-item"><a class="menu-link">2013</a></li>
+          <li class="menu-item"><a class="menu-link">2016</a></li>
+          <li class="menu-item"><a class="menu-link">2020</a></li>
         </ul>
       </li>
     </ul>
@@ -51,7 +45,7 @@
   <canvas id="Canvas"></canvas>
   <img src="../images/highlights.png" usemap="#highlightsMap" id="highlights" />
   <map id="highlightsMap" name="highlightsMap">
-    <area class="highlights" onmouseover="myHover(this);" onmouseout="myLeave();" href="#" onclick="modal_open(1)" style="cursor:pointer" coords="269,86,1095,440" shape="rect">
+    <area class="highlights" onmouseover="myHover(this);" onmouseout="myLeave();" onclick="modal_open(1)" style="cursor:pointer" coords="269,86,1095,440" shape="rect">
   </map>
 
   <div id="block"></div>
@@ -59,17 +53,22 @@
   <div id="modal">
     <figure>
       <div class="active">
+        <h1 class="highlightshead1">2012 Championship highlights</h1>
         <iframe src="https://www.youtube.com/embed/Hh7llhlYZIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div>
+        <h1 class="highlightshead1">2013 Championship highlights</h1>
         <iframe src="https://www.youtube.com/embed/vZldJ5ocm5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
       </div>
       <div>
+        <h1 class="highlightshead2">2016 Championship highlights</h1>
         <iframe class="video2016" src="https://www.youtube.com/embed/8iw-qkYDp4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="video2016" src="https://www.youtube.com/embed/ko2J45CEub8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div>
+        <h1 class="highlightshead1">2020 Championship highlights</h1>
         <iframe src="https://www.youtube.com/embed/FASrK4wAXZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="notice">저작권 문제로 동영상이 나타나지 않을 시 YouTube에서 보기를 누르세요.</p>
       </div>
     </figure>
     <div class="indicator">
