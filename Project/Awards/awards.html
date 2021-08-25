@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="arthor" content="KWON">
+    <title>Lebron James</title>
+    <link rel="stylesheet" href="awardsStyle.css">
+  </head>
+<body onload="myInit()">
+  <input type="checkbox" id="menu-toggle"/>
+  <label for="menu-toggle">
+    <span></span>
+  </label>
+
+  <div class="header">
+    <h2><a href="awards.html">AWARDS</a></h2>
+  </div>
+
+  <nav id="main" class="menu-main">
+    <ul class="menu">
+      <li class="menu-item"><a class="menu-link" href="../index.html">HOME</a></li>
+      <li class="menu-item"><a class="menu-link" href="../Profile/profile.html">PROFILE</a></li>
+      <li class="menu-item"><a class="menu-link" href="../History/history.html">HISTORY</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link">YOUTH</a></li>
+          <li class="menu-item"><a class="menu-link">CLEVELAND #1</a></li>
+          <li class="menu-item"><a class="menu-link">MIAMI HEAT</a></li>
+          <li class="menu-item"><a class="menu-link">CLEVELAND #2</a></li>
+          <li class="menu-item"><a class="menu-link">LA LAKERS</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a class="menu-link" href="awards.html">AWARDS</a></li>
+      <li class="menu-item"><a class="menu-link" href="../Highlights/highlights.html">HIGHLIGHTS</a>
+        <ul class="submenu">
+          <li class="menu-item"><a class="menu-link">2012</a></li>
+          <li class="menu-item"><a class="menu-link">2013</a></li>
+          <li class="menu-item"><a class="menu-link">2016</a></li>
+          <li class="menu-item"><a class="menu-link">2020</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <canvas id="Canvas"></canvas>
+  <img src="../images/awards.png" usemap="#awardsMap" id="awards" />
+  <map name="awardsMap" id="awardsMap">
+    <area class="awards" shape="rect" onmouseover="myHover(this);" onmouseout="myLeave();" onclick="modal_open()" coords="199,38,1349,599" style="cursor:pointer">
+  </map>
+
+  <div id="modal">
+    <div id="modalAwards">
+  	<h1>Awards</h1>
+    <table class="tb">
+    <thead>
+      <tr>
+        <td class="tb-1">NBA 챔피언</td>
+        <td class="tb-2">4회 (2012-2013, 2016, 2020)</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tb-1">NBA 파이널 MVP</td>
+        <td class="tb-2">4회 (2012-2013, 2016, 2020)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">NBA 정규시즌 MVP</td>
+        <td class="tb-2">4회 (2009-2010, 2012-2013)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올-NBA 퍼스트팀</td>
+        <td class="tb-2">13회 (2006, 2008-2018, 2020)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올-NBA 세컨드팀</td>
+        <td class="tb-2">3회 (2005, 2007, 2021)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올-NBA 서드 팀</td>
+        <td class="tb-2">1회 (2019)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올-디펜시브 퍼스트팀</td>
+        <td class="tb-2">5회 (2009-2013)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올-디펜시브 세컨드팀</td>
+        <td class="tb-2">1회 (2014)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올해의 신인상</td>
+        <td class="tb-2">1회 (2004)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올-루키 퍼스트팀</td>
+        <td class="tb-2">1회 (2004)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올해의 득점왕</td>
+        <td class="tb-2">1회 (2008)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올해의 어시스트왕</td>
+        <td class="tb-2">1회 (2020)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">NBA 올스타</td>
+        <td class="tb-2">17회 (2005-2021)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">NBA 올스타전 MVP</td>
+        <td class="tb-2">3회 (2006, 2008, 2018)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">네이스미스 선정 올해의 선수상</td>
+        <td class="tb-2">1회 (2003)</td>
+      </tr>
+      <tr>
+        <td class="tb-1">올해의 스포츠 인물(스포츠 일러스트레이티드)</td>
+        <td class="tb-2">3회 (2012, 2016, 2020)</td>
+      </tr>
+      <tr>
+        <td class="tb-3" colspan="2"><span style="font-weight:bold">2006 FIBA 세계 선수권 대회</span> 동메달</td>
+      </tr>
+      <tr>
+        <td class="tb-3" colspan="2"><span style="font-weight:bold">2004 아테네 올림픽</span> 동메달<br><span style="font-weight:bold">2008 베이징 올림픽</span> 금메달<br><span style="font-weight:bold">2012 런던 올림픽</span> 금메달</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+  <div class="btn-close" onclick="modal_close()">X</div>
+  </div>
+  <script src="awardsApp.js"></script>
+</body>
+</html>
