@@ -276,6 +276,22 @@ canvas
   width: 100%;
 }
 
+#miami2012 {
+  width: 100%;
+}
+
+#miami2013 {
+  width: 100%;
+}
+
+#cleveland2016 {
+  width: 100%;
+}
+
+#lakers2020 {
+  width: 100%;
+}
+
 #modal #history1 {
   text-align: left;
   padding-left: 60px;
@@ -293,7 +309,37 @@ canvas
   font-size: large;
   font-weight: bolder;
   line-height: 200%;
+  color: yellow;
+}
+
+#modal #history3 {
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: large;
+  font-weight: bolder;
+  line-height: 200%;
   color: #e61919;
+}
+
+#modal #history4 {
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: large;
+  font-weight: bolder;
+  line-height: 200%;
+  color: red;
+}
+
+#modal #history5 {
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: large;
+  font-weight: bolder;
+  line-height: 200%;
+  color: #6c00ac;
 }
 
 #modal .historyhead1 {
@@ -303,6 +349,24 @@ canvas
 
 #modal .historyhead2 {
   color: black;
+}
+
+#modal .historyheadWhite1 {
+  text-align: center;
+  color: white;
+}
+
+#modal .historyheadWhite2 {
+  color: white;
+}
+
+#modal .historyheadYellow1 {
+  text-align: center;
+  color: yellow;
+}
+
+#modal .historyheadYellow2 {
+  color: yellow;
 }
 
 #modal.active{
@@ -324,7 +388,19 @@ canvas
 }
 
 #modal.active #history2 {
+  background-color: #760c0c;
+}
+
+#modal.active #history3 {
   background-color: white;
+}
+
+#modal.active #history4 {
+  background-color: black;
+}
+
+#modal.active #history5 {
+  background-color: gold;
 }
 
 #modal{
@@ -337,8 +413,8 @@ canvas
 	top: 0px;
   right: 0px;
 	padding: 15px;
-	color: black;
-  font-size: large;
+	color: gray;
+  font-size: 30px;
 }
 
 .btn-close:hover{
@@ -374,8 +450,10 @@ canvas
 }
 .indicator button:focus{ background: #38f; }
 
-figure div{
+figure div {
 	display: none;
 }
 
-figure div.active{ display: block; }
+figure div.active {
+  display: block;
+}
